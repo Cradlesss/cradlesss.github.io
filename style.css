@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8E05C2; /* Accent color */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a:hover {
+    color: #700B97;
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 80px 16px;
+    background: linear-gradient(135deg, #3E065F, #700B97);
+  }
+  
+  #hero h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  #hero p {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  
+  .cta-button {
+    padding: 16px 32px;
+    background-color: #8E05C2;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #700B97;
+  }
+  
+  /* O Nas */
+  #about {
+    padding: 80px 16px;
+  }
+  
+  #about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #8E05C2;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 16px;
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  
+  /* Nasze Usługi */
+  #services {
+    padding: 80px 16px;
+    background-color: #121212;
+  }
+  
+  #services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #8E05C2;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+  
+  .service-card {
+    background: rgba(42, 42, 42, 0.8);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .service-card img {
+    max-width: 100px;
+    margin-bottom: 16px;
+  }
+  
+  .service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #8E05C2;
+  }
+  
+  /* Kontakt */
+  #contact {
+    padding: 80px 16px;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 32px;
+    color: #8E05C2;
+    margin-bottom: 24px;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 24px 16px;
+    text-align: center;
+    background-color: #1A1A1A;
+    font-size: 14px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  }
+  
