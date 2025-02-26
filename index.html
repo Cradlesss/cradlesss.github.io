@@ -2,74 +2,94 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Void Studio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- You can add Google Fonts if needed; for example: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div class="logo">Project Void Studio</div>
-    <nav>
-      <ul>
-        <li><a href="#about">O Nas</a></li>
-        <li><a href="#services">Nasze Usługi</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <!-- You can replace this with an image if desired -->
+        Project Void Studio
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">O Nas</a></li>
+          <li><a href="#services">Nasze Usługi</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <h1>Innowacyjne rozwiązania technologiczne</h1>
-    <p>Łączymy minimalistyczny design z przyszłościową funkcjonalnością</p>
-    <a href="#services" class="cta-button">Poznaj nasze produkty</a>
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <h1>Innowacyjne rozwiązania technologiczne</h1>
+      <p>Łączymy minimalistyczny design z przyszłościową funkcjonalnością.</p>
+      <a href="#services" class="cta-button">Poznaj nasze produkty</a>
+    </div>
   </section>
 
-  <!-- O Nas -->
-  <section id="about">
-    <h2>O Nas</h2>
-    <div class="about-container">
-      <img src="images/about.jpg" alt="O nas" class="about-image">
+  <!-- About Us -->
+  <section id="about" class="about-section">
+    <div class="container about-container">
+      <div class="about-image">
+        <!-- Placeholder image; replace with your own image in the images folder -->
+        <img src="images/about.jpg" alt="O nas">
+      </div>
       <div class="about-text">
+        <h2>O Nas</h2>
         <p>
-          Jesteśmy Project Void Studio – zespołem pasjonatów nowoczesnych technologii, który redefiniuje interakcje z cyfrowym światem. Nasze innowacyjne rozwiązania łączą zaawansowaną funkcjonalność z minimalistyczną estetyką, inspirując się nowoczesnymi trendami oraz futurystycznymi wizjami.
+          Jesteśmy Project Void Studio – zespół pasjonatów nowoczesnych technologii, którzy łączą zaawansowaną funkcjonalność z futurystycznym designem. Nasze flagowe projekty, Vortex app oraz Vortex controller, pozwalają na pełną personalizację efektów wizualnych, a nasza przyszła gra komputerowa to kolejny krok w integracji rozrywki z technologią.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Nasze Usługi -->
-  <section id="services">
-    <h2>Nasze Usługi</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="images/vortex_app.png" alt="Vortex App">
-        <h3>Vortex App</h3>
-        <p>Zaawansowana aplikacja mobilna do kompleksowego zarządzania efektami wizualnymi.</p>
-      </div>
-      <div class="service-card">
-        <img src="images/vortex_controller.png" alt="Vortex Controller">
-        <h3>Vortex Controller</h3>
-        <p>Precyzyjny system sterowania animacjami LED, gwarantujący spektakularne efekty.</p>
-      </div>
-      <div class="service-card">
-        <img src="images/game.png" alt="Gra komputerowa">
-        <h3>Gra Komputerowa</h3>
-        <p>Nadchodzący projekt, łączący interaktywność i rozrywkę w nowoczesnej oprawie graficznej.</p>
+  <!-- Our Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>Nasze Usługi</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="images/vortex_app.png" alt="Vortex App">
+          <h3>Vortex app</h3>
+          <p>Zaawansowana aplikacja mobilna umożliwiająca kompleksowe sterowanie efektami wizualnymi.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/vortex_controller.png" alt="Vortex Controller">
+          <h3>Vortex controller</h3>
+          <p>Precyzyjny system sterujący dynamicznymi animacjami LED, gwarantujący spektakularne efekty.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/game.png" alt="Gra komputerowa">
+          <h3>Gra komputerowa</h3>
+          <p>Przyszły projekt łączący interaktywność z rozrywką, wykorzystujący nowoczesną grafikę i innowacyjne rozwiązania.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Kontakt -->
-  <section id="contact">
-    <h2>Kontakt</h2>
-    <p>Skontaktuj się z nami: email@example.com</p>
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p>Skontaktuj się z nami: <a href="mailto:kontakt@projectvoid.pl">kontakt@projectvoid.pl</a></p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Project Void Studio. Wszelkie prawa zastrzeżone.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 Project Void Studio. Wszelkie prawa zastrzeżone.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
